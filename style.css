@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fc-nav: #C4C4CC;
+    --fc-nav-hover: #FFF;
+    --fc-body: #E1E1E6;
+
+    --fs-nav: 2.1rem;
+    --fs-body-home: 4.8rem;
+    --fs-body-universe: 1.8rem;
+
+    font-size: 62.5%;
+}
+
+body {
+    background-size: cover;
+    background-position: 0 -10rem;
+    background-repeat: no-repeat;
+
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    width: 100%;
+    padding: 4rem 7.4rem;
+
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+nav a img {
+    position: sticky;
+    z-index: -1;
+}
+
+nav ul {
+    display: flex;
+    gap: 3.2rem;
+    
+    list-style: none;
+
+    transition-property: transform;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    padding: 0 .5rem;
+
+    text-decoration: none;
+    font-size: var(--fs-nav);
+    color: var(--fc-nav);
+}
+
+nav ul li a:hover,
+.app button {
+    font-weight: bold;
+    color: var(--fc-nav-hover);
+}
+
+.app {
+    color: var(--fc-body);
+}
+
+.app h1 {
+    margin-bottom: 2.4rem;
+
+    font-size: var(--fs-body-home);
+    line-height: 6rem;
+}
+
+.app a {
+    height: 4.3rem;
+    display: inline-block;
+    z-index: 1;
+}
+
+.app button {
+    padding: 1.2rem 3.2rem;
+
+    background-color: transparent;
+    border: 2px solid #FFF;
+    border-radius: .5rem;
+    
+    cursor: pointer;
+}
+
+.app .home {
+    width: fit-content;
+    margin: 25rem auto 0;
+
+    text-align: center;
+}
+
+.app .universe,
+.app .exploration {
+    width: 64.8rem;
+    margin-top: 20rem;
+    margin-left: 10.2rem;
+
+    font-size: var(--fs-body-universe);
+    line-height: 160%;
+}
